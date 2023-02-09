@@ -4,8 +4,8 @@ import FormSubmit from "./FormSubmit";
 
 export default function Form() {
   return (
-    <form className="max-w-xs mx-auto p-4">
-      <div className="ml-1 my-4">
+    <form className="max-w-xs mx-auto my-16 p-4 rounded-lg shadow-lg bg-white">
+      <div className="ml-1 mb-4">
         <FormHeader
           headline="Master account login"
           subheadline={
@@ -17,8 +17,8 @@ export default function Form() {
         />
       </div>
       <div className="grid grid-cols-1 gap-2">
-        <FormInput type="text" label="Username:" isRequired />
-        <FormInput type="password" label="Password:" isRequired />
+        <FormInput type="text" isRequired placeholder="Username" />
+        <FormInput type="password" isRequired placeholder="Password" />
       </div>
       <FormSubmit />
     </form>
