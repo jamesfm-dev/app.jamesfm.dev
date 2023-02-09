@@ -4,16 +4,14 @@ export default function FormSubmit() {
       type="submit"
       className="
         p-2 
-        mt-8 
+        mt-8
+        mb-2 
         w-full 
-        rounded-full 
-        shadow-md
-        border
-        text-black
-        bg-white
-        hover:bg-black 
-        hover:cursor-pointer 
-        hover:text-white"
+        rounded-lg
+        text-white
+        bg-black
+        hover:bg-opacity-90
+        hover:cursor-pointer"
     />
   );
 }
