@@ -5,14 +5,18 @@ export default function FormInput({
   isRequired,
 }: {
   type: React.HTMLInputTypeAttribute;
-  label: string;
+  label?: string;
   placeholder?: string;
   isRequired: boolean;
 }) {
   return (
     <label>
-      <span className="ml-2">{label}</span>
-      {isRequired ? <span className="text-red-500"> *</span> : null}
+      {label ? (
+        <>
+          <span className="ml-2">{label}</span>
+          {isRequired ? <span className="text-red-500"> *</span> : null}
+        </>
+      ) : null}
       <input
         type={type}
         placeholder={placeholder}
