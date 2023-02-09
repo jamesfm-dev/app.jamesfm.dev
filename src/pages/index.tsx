@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { Form, Header } from "@/components";
+import { Header, Hero } from "@/components";
 
 export default function Home() {
   return (
@@ -12,11 +12,7 @@ export default function Home() {
       </Head>
       <Header />
       <main>
-        <div className="container mx-auto grid md:grid-cols-2">
-          <section>
-            <Form />
-          </section>
-        </div>
+        <Hero />
       </main>
     </>
   );
