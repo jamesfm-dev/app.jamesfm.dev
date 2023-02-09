@@ -1,3 +1,4 @@
 import Form from "./Form";
 import Header from "./Header";
-export { Form, Header };
+import Badge from "./Badge";
+export { Form, Header, Badge };
