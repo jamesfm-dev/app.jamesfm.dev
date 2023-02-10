@@ -18,8 +18,13 @@ export default function Form() {
           />
         </div>
         <div className="grid grid-cols-1 gap-2">
-          <FormInput type="text" isRequired placeholder="Username" />
-          <FormInput type="password" isRequired placeholder="Password" />
+          <FormInput id="user" type="text" isRequired placeholder="Username" />
+          <FormInput
+            id="pass"
+            type="password"
+            isRequired
+            placeholder="Password"
+          />
         </div>
         <FormSubmit />
       </form>

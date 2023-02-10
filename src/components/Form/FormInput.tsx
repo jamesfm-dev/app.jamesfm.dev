@@ -3,11 +3,13 @@ export default function FormInput({
   label,
   placeholder,
   isRequired,
+  id,
 }: {
   type: React.HTMLInputTypeAttribute;
   label?: string;
   placeholder?: string;
   isRequired: boolean;
+  id: string;
 }) {
   return (
     <label>
@@ -18,6 +20,8 @@ export default function FormInput({
         </>
       ) : null}
       <input
+        id={id}
+        name={id}
         type={type}
         placeholder={placeholder}
         required={isRequired}
