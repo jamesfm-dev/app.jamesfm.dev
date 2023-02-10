@@ -1,4 +1,3 @@
-import Footer from "./Footer";
-import Header from "./Header";
 import Hero from "./Hero";
-export { Header, Hero, Footer };
+import Layout from "./Layout";
+export { Hero, Layout };
